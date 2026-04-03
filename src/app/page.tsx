@@ -1,3 +1,4 @@
+import Link from "next/link";
 import "./page.css";
 
 /**
@@ -49,6 +50,13 @@ export default function Home() {
           >
             Vercel Docs
           </a>
+        </div>
+
+        {/* ページ内リンク */}
+        <div className="link-group">
+          <Link href="/about" className="btn-primary">
+            About ページへ →
+          </Link>
         </div>
       </main>
     </div>

@@ -25,6 +25,16 @@ npm run build
 npm start
 ```
 
+## ドキュメント生成
+
+[TypeDoc](https://typedoc.org/) で TSDoc コメントから API ドキュメント（HTML）を生成できます。
+
+```bash
+npx typedoc --entryPoints src/app/layout.tsx --out docs --skipErrorChecking
+```
+
+`docs/index.html` をブラウザで開くと確認できます。
+
 ## Vercel へのデプロイ
 
 1. このリポジトリを GitHub にプッシュ

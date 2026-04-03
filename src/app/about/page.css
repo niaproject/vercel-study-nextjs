@@ -1,0 +1,36 @@
+/* About ページ用スタイル */
+@reference "../globals.css";
+
+/* ページ全体のラッパー: 画面中央配置 + グリーン系グラデーション背景 */
+.about-wrapper {
+  @apply flex min-h-screen flex-col items-center justify-center
+    bg-gradient-to-b from-green-50 to-white
+    dark:from-gray-900 dark:to-black;
+}
+
+/* メインコンテンツ: 中央寄せ + 余白 */
+.about-content {
+  @apply flex flex-col items-center gap-8 p-8 text-center;
+}
+
+/* ページタイトル */
+.about-title {
+  @apply text-5xl font-bold tracking-tight text-gray-900 dark:text-white;
+}
+
+/* 説明文 */
+.about-description {
+  @apply max-w-md text-lg text-gray-600 dark:text-gray-400;
+}
+
+/* コードスニペット（インライン） */
+.about-code {
+  @apply rounded bg-gray-200 px-1 dark:bg-gray-700;
+}
+
+/* 戻るリンク */
+.about-back-link {
+  @apply rounded-full border border-gray-300 px-6 py-3
+    text-sm font-medium transition hover:bg-gray-100
+    dark:border-gray-600 dark:hover:bg-gray-800;
+}
