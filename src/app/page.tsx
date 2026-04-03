@@ -5,8 +5,10 @@ import "./page.css";
  * ビルド時に静的生成され、ビルド日時を表示する
  */
 export default function Home() {
-  /* ビルド時のタイムスタンプ（静的生成時に確定） */
-  const deployedAt = new Date().toISOString();
+  /* ビルド時のタイムスタンプ（日本時間で表示） */
+  const deployedAt = new Date().toLocaleString("ja-JP", {
+    timeZone: "Asia/Tokyo",
+  });
 
   return (
     <div className="page-wrapper">
